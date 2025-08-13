@@ -6,14 +6,11 @@ info:
     version: "v1"
 servers:
     - url: https://graph.microsoft.com/beta/security
-
 paths:
     /secureScores:
         get:
             operationId: GetSecureScoreDetails
             description: List all secure score details
-            ExamplePrompt:
-              - 'show me my top 5 recommendations from secure score'
             responses:
                 "200":
                     description: OK
